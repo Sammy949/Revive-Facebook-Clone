@@ -1,0 +1,218 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black pt-5 transition-all">
+    <nav
+      class="bg-white mx-auto rounded-full h-16 w-11/12 flex items-center"
+    >
+      <a href="/" class="text-black ml-5 font-semibold text-2xl"
+        ><span class="text-green-600 font-bold">re</span>vive</a
+      >
+
+      <ul id="navbar" class="list-none ml-auto sm:flex space-x-3 items-center flex-col justify-between sm:flex-row [display:_none]">
+        <li class="my-3 sm:my-0">
+          <a
+            href="#"
+            class="text-green-600 hover:text-green-700 text-base font-semibold"
+            >donate</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="#"
+            class="bg-green-600 hover:bg-green-700 px-5 transition-all rounded-full py-3 sm:my-4 mx-2 text-base font-semibold"
+            >join a challenge</a
+          >
+        </li>
+
+        <div>
+
+        </div>
+      </ul>
+
+      <div class="sm:[display:_none] ml-auto" id="nav"><img src="./images/caret-down.svg" width="30px" alt=""></div>
+
+      <div class="[display:_none] ml-auto" id="nav-times"><img src="./images/bolt.svg" width="30px" alt=""></div>
+    </nav>
+    
+    <main
+      class="flex flex-col justify-center items-center h-[calc(100vh-92px)] relative"
+    >
+      <h1
+        class="text-3xl md:text-5xl sm:text-4xl transition-all text-white font-extrabold text-center leading-tight lowercase"
+      >
+        Hack the <span class="text-green-600">Planet</span> for good<br />
+        Coding a Sustainable <span class="text-yellow-500">future</span> 
+      </h1>
+
+      <div class="flex items-center justify-between space-x-3 mt-12">
+        <a
+          href="#"
+          class="bg-white py-3 px-5 rounded-full font-bold text-base text-black hover:bg-green-600 hover:text-white transition-all"
+          >donate</a
+        >
+        <a
+          href="#"
+          class="bg-green-600 hover:bg-green-700 font-bold text-white px-5 transition-all rounded-full py-3 mx-2 text-base"
+          >join a challenge</a
+        >
+      </div>
+    </main>
+
+    <div class="absolute bottom-0 right-0 -z-10"><img src="./images/shape-13.png" alt=""></div>
+
+    <footer class="md:h-[15rem] text-center md:text-left rounded-3xl my-8 mx-auto w-11/12 bg-white md:flex justify-between items-end p-4">
+      <div class="ml-3">
+        <h1 class="text-6xl font-bold md:mb-8 mb-2"><span class="text-green-600">re</span>vive</h1>
+        <p class="mb-2 p-1 md:mb-10 md:border-none border-b-[1.5px] border-slate-300/100">revive, all rights reserved. &copy; 2023</p>
+      </div>
+
+      <div class="lowercase md:flex justify-between md:my-auto">
+        <a href="/" class="mx-4">Privacy Policy</a>
+        <a href="/" class="mx-4">Terms of Service</a>
+      </div>
+    </footer>
+
+    <script>
+      let navbar = document.querySelector('#navbar');
+      let navbtn = document.querySelector('#nav'); 
+      let navtimes = document.querySelector('#nav-times'); 
+
+      navbtn.onclick = () =>{
+        navbar.style.display = 'flex';
+        navbtn.style.display = 'none';
+        navtimes.style.display = 'flex';
+      }
+
+      navtimes.onclick = () =>{
+        navbar.style.display = 'none';
+        navbtn.style.display = 'flex';
+        navtimes.style.display = 'none';
+      }
+      
+    </script>
+  </body>
+</html>
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black pt-5 transition-all">
+    <nav
+      id="navbar"
+      class="bg-white mx-auto rounded-full h-16 w-11/12 flex items-center relative"
+    >
+      <a href="/" class="text-black ml-5 font-semibold text-2xl"
+        ><span class="text-green-600 font-bold">re</span>vive</a
+      >
+
+      <ul
+        id="navbar"
+        class="list-none ml-auto sm:flex space-x-3 items-center flex-col justify-between sm:flex-row hidden"
+      >
+        <li class="my-3 sm:my-0">
+          <a
+            href="#"
+            class="text-green-600 hover:text-green-700 text-base font-semibold"
+            >donate</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="#"
+            class="bg-green-600 hover:bg-green-700 px-5 transition-all rounded-full py-3 sm:my-4 mx-2 text-base font-semibold"
+            >join the challenge</a
+          >
+        </li>
+      </ul>
+
+      <img
+        id="bars-icon"
+        src="./images/bars.svg"
+        class="block sm:hidden ml-auto sm:ml-0 mr-5 w-4 cursor-pointer"
+      />
+    </nav>
+
+    <!-- Hero -->
+    <main
+      class="flex flex-col justify-center items-center h-[calc(100vh_-_92px)] relative"
+    >
+      <h1
+        class="text-2xl md:text-5xl sm:text-4xl transition-all text-white font-extrabold text-center leading-tight lowercase container"
+      >
+        Hack the <span class="text-green-600">Planet</span> for good<br />
+        Coding a Sustainable <span class="text-yellow-500">future</span>
+      </h1>
+
+      <div
+        class="flex items-center flex-col sm:flex-row justify-between space-x-3 mt-12"
+      >
+        <a
+          href="#"
+          class="bg-white py-3 px-5 my-2 sm:my-0 w-full flex items-center justify-center sm:w-fit rounded-full font-bold text-base text-black hover:bg-green-600 hover:text-white transition-all"
+          >donate</a
+        >
+        <a
+          href="#"
+          class="bg-green-600 hover:bg-green-700 w-full flex items-center justify-center sm:w-fit font-bold text-white px-5 transition-all rounded-full py-3 mx-2 text-base"
+          >join the challenge</a
+        >
+      </div>
+    </main>
+
+    <div class="absolute bottom-0 left-0 -scale-x-100 [z-index:_-1]">
+      <img src="./images/shape-13.png" alt="" />
+    </div>
+    <div class="absolute bottom-0 right-0 [z-index:_-1]">
+      <img src="./images/shape-13.png" alt="" />
+    </div>
+
+    <footer
+      class="md:h-[15rem] text-center md:text-left rounded-3xl my-8 mx-auto w-11/12 bg-white md:flex justify-between items-end p-4"
+    >
+      <div class="ml-3">
+        <h1 class="text-6xl font-bold md:mb-8 mb-2">
+          <span class="text-green-600">re</span>vive
+        </h1>
+        <p
+          class="mb-2 p-1 md:mb-10 md:border-none border-b-[1.5px] border-slate-300/100"
+        >
+          revive, all rights reserved. &copy; 2023
+        </p>
+      </div>
+
+      <div class="lowercase md:flex justify-between md:my-auto">
+        <a href="/" class="mx-4">Privacy Policy</a>
+        <a href="/" class="mx-4">Terms of Service</a>
+      </div>
+    </footer>
+    <!-- Hero -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const barsIcon = document.getElementById("bars-icon");
+        const menu = document.getElementById("menu");
+
+        barsIcon.addEventListener("click", () => {
+          menu.style.display = "flex";
+        });
+      });
+    </script>
+  </body>
+</html>
